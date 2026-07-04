@@ -11,7 +11,6 @@ import { cn } from "@/lib/utils";
 
 export function Header() {
   const pathname = usePathname();
-  const [scrolled, setScrolled] = useState(pathname !== "/");
   const [hidden, setHidden] = useState(false);
 
   useEffect(() => {
@@ -24,8 +23,6 @@ export function Header() {
       window.requestAnimationFrame(() => {
         const currentY = Math.max(0, window.scrollY);
         const diff = currentY - lastY;
-
-        setScrolled(currentY > 24 || pathname !== "/");
 
         if (currentY <= 24) {
           setHidden(false);

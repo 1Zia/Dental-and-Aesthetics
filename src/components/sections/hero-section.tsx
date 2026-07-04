@@ -6,7 +6,7 @@ import { AnimatedReveal } from "@/components/ui/animated-reveal";
 import { HeroScrollAnimation } from "@/components/sections/hero-scroll-animation";
 import { PremiumButton } from "@/components/ui/premium-button";
 import { SectionLabel } from "@/components/ui/section-label";
-import { clinic, contactLinks } from "@/lib/constants";
+import { contactLinks } from "@/lib/constants";
 
 const frameCount = 133;
 

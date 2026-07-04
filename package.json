@@ -1,0 +1,36 @@
+{
+  "name": "dental-aesthetic-hub",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint src next.config.ts eslint.config.mjs --max-warnings=0",
+    "typecheck": "tsc --noEmit --incremental false"
+  },
+  "dependencies": {
+    "@hookform/resolvers": "latest",
+    "@next/swc-win32-x64-msvc": "^16.2.10",
+    "class-variance-authority": "latest",
+    "clsx": "latest",
+    "lucide-react": "latest",
+    "motion": "latest",
+    "next": "16.2.10",
+    "react": "latest",
+    "react-dom": "latest",
+    "react-hook-form": "latest",
+    "tailwind-merge": "latest",
+    "zod": "latest"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "latest",
+    "@types/node": "latest",
+    "@types/react": "latest",
+    "@types/react-dom": "latest",
+    "eslint": "latest",
+    "eslint-config-next": "16.2.10",
+    "tailwindcss": "latest",
+    "typescript": "latest"
+  }
+}

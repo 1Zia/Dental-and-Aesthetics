@@ -4,6 +4,24 @@ import { navigation } from "@/data/navigation";
 import { treatments } from "@/data/treatments";
 import { clinic, contactLinks } from "@/lib/constants";
 
+const socialLinks = [
+  {
+    label: "Instagram",
+    href: contactLinks.instagram,
+    value: clinic.instagramHandle
+  },
+  {
+    label: "Facebook",
+    href: contactLinks.facebook,
+    value: clinic.facebookPage
+  },
+  {
+    label: "LinkedIn",
+    href: contactLinks.linkedin,
+    value: clinic.linkedinName
+  }
+];
+
 export function Footer() {
   return (
     <footer className="border-t border-border bg-deep-espresso py-16 text-pearl">
@@ -50,9 +68,21 @@ export function Footer() {
             <a href={contactLinks.whatsapp} className="transition-colors hover:text-champagne-gold">WhatsApp</a>
             <span>{clinic.address}</span>
             <span>{clinic.hours}</span>
-            <span>Instagram: {clinic.instagramHandle}</span>
-            <span>Facebook: {clinic.facebookPage}</span>
-            <span>LinkedIn: {clinic.linkedinName}</span>
+            <div className="mt-2 grid gap-2">
+              {socialLinks.map(({ label, href, value }) => (
+                <a
+                  key={label}
+                  href={href}
+                  target="_blank"
+                  rel="noreferrer"
+                  aria-label={`${label}: ${value}`}
+                  className="inline-flex items-center gap-2 transition-colors hover:text-champagne-gold"
+                >
+                  <span className="font-medium text-pearl">{label}</span>
+                  <span>{value}</span>
+                </a>
+              ))}
+            </div>
           </div>
         </div>
         </div>

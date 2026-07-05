@@ -55,22 +55,22 @@ export function Header() {
       }}
     >
       <nav
-        className="site-header-glass pointer-events-auto mx-auto flex lg:grid w-full max-w-[1280px] lg:grid-cols-[1fr_auto_1fr] items-center justify-between gap-4 px-4 py-2 lg:px-5 text-deep-espresso"
+        className="site-header-glass pointer-events-auto mx-auto flex min-h-14 w-full max-w-[1280px] items-center justify-between gap-3 px-3 py-2 text-deep-espresso lg:grid lg:grid-cols-[1fr_auto_1fr] lg:gap-4 lg:px-5"
       >
         {/* Left Column: Logo (aligned to start, prevented from wrapping) */}
         <Link 
           href="/" 
-          className="flex min-w-0 items-center gap-3 justify-self-start" 
+          className="flex min-w-0 flex-1 items-center gap-3 justify-self-start lg:flex-none" 
           aria-label={`${clinic.fullName} home`}
         >
           <span className="grid size-10 shrink-0 place-items-center rounded-full bg-deep-espresso font-serif text-base font-semibold text-pearl shadow-none">
             R
           </span>
-          <span className="min-w-0">
-            <span className="block text-xs sm:text-sm font-semibold leading-tight text-deep-espresso whitespace-normal">
+          <span className="min-w-0 max-w-[calc(100vw-8.75rem)] lg:max-w-none">
+            <span className="block truncate text-xs font-semibold leading-tight text-deep-espresso sm:text-sm">
               {clinic.name}
             </span>
-            <span className="block text-[10px] sm:text-[11px] leading-none text-muted-foreground mt-0.5">by Dr. Romana</span>
+            <span className="mt-0.5 block truncate text-[10px] leading-none text-muted-foreground sm:text-[11px]">by Dr. Romana</span>
           </span>
         </Link>
 

@@ -33,15 +33,9 @@ export default function AboutPage() {
             sizes="100vw"
             className="object-cover object-center md:object-[center_28%] opacity-40 transition-transform duration-[10s] ease-out hover:scale-105"
           />
-          {/* Gradients to blend text and background cleanly, with a touch of clinical/cyber blue */}
-          <div className="absolute inset-0 bg-gradient-to-t from-deep-espresso via-deep-espresso/80 to-transparent z-[1]" />
-          <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(14,165,233,0.18),transparent_65%)] z-[1]" />
-          <div className="absolute inset-0 bg-gradient-to-r from-deep-espresso via-deep-espresso/60 to-transparent z-[1] hidden md:block" />
+          {/* Gradients to blend text and background cleanly */}
+          <div className="absolute inset-0 bg-gradient-to-t from-deep-espresso via-deep-espresso/70 to-deep-espresso/40 md:bg-gradient-to-r md:from-deep-espresso md:via-deep-espresso/60 md:to-transparent z-[1]" />
         </div>
-
-        {/* Futuristic Clinical Blue & Gold ambient light leak / glow */}
-        <div className="absolute top-1/4 right-0 w-[500px] h-[500px] bg-sky-500/10 rounded-full blur-[130px] pointer-events-none mix-blend-screen z-[2] hidden md:block" />
-        <div className="absolute bottom-10 left-1/3 w-[350px] h-[350px] bg-champagne-gold/8 rounded-full blur-[100px] pointer-events-none mix-blend-screen z-[2]" />
 
         {/* Content */}
         <div className="container-shell relative z-10 py-28 md:py-36 grid gap-10 lg:grid-cols-[1.1fr_0.9fr] items-center">
@@ -51,11 +45,7 @@ export default function AboutPage() {
               Calm dental and aesthetic care in Islamabad.
             </h1>
           </div>
-          <div className="cyber-glass p-8 md:p-10 rounded-2xl text-pearl/95 shadow-2xl relative overflow-hidden">
-            {/* Cybernetic Accent lines */}
-            <div className="absolute top-0 right-0 w-16 h-[1px] bg-gradient-to-l from-sky-400 to-transparent" />
-            <div className="absolute top-0 right-0 w-[1px] h-16 bg-gradient-to-b from-sky-400 to-transparent" />
-            
+          <div className="bg-deep-espresso/40 backdrop-blur-md border border-pearl/10 p-8 md:p-10 rounded-2xl text-pearl/90 shadow-lg">
             <p className="pretty text-base sm:text-lg leading-relaxed sm:leading-8">
               Dental & Aesthetic Hub by Dr. Romana is a dental and aesthetic clinic in Islamabad
               offering dental care, skin treatments, hair treatments, laser procedures, and

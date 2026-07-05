@@ -22,7 +22,7 @@ export function MobileNav() {
         {open ? <X className="size-5" /> : <Menu className="size-5" />}
       </button>
       {open ? (
-        <div className="site-header-glass absolute inset-x-4 top-24 translate-y-0 p-4 opacity-100 transition-[opacity,transform] duration-200">
+        <div className="watery-glass absolute inset-x-4 top-24 translate-y-0 p-5 opacity-100 transition-[opacity,transform] duration-200 shadow-2xl">
           <div className="grid gap-1">
             {navigation.map((item) => (
               <Link

@@ -1,4 +1,3 @@
-import { BookingCta } from "@/components/sections/booking-cta";
 import { DentalAestheticsSplit } from "@/components/sections/dental-aesthetics-split";
 import { DoctorProfileSection } from "@/components/sections/doctor-profile-section";
 import { FaqSection } from "@/components/sections/faq-section";
@@ -23,7 +22,6 @@ export default function Home() {
       <ResultsGalleryPreview />
       <TestimonialsSection />
       <FaqSection />
-      <BookingCta />
     </main>
   );
 }

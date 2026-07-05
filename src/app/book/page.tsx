@@ -16,7 +16,7 @@ export default function BookPage() {
       <div className="container-shell grid gap-10 lg:grid-cols-[0.88fr_1.12fr] lg:items-start">
         <div className="editorial-rule lg:sticky lg:top-28">
           <SectionLabel>Appointments</SectionLabel>
-          <h1 className="balanced mt-5 font-serif text-6xl font-semibold leading-none text-deep-espresso md:text-8xl">
+          <h1 className="balanced mt-5 font-serif text-4xl sm:text-5xl md:text-8xl font-semibold leading-tight md:leading-none text-deep-espresso">
             Request a private consultation.
           </h1>
           <p className="pretty mt-6 max-w-xl text-lg leading-8 text-muted-foreground">
@@ -26,7 +26,7 @@ export default function BookPage() {
 
           <PremiumCard className="mt-8 bg-pearl shadow-none">
             <p className="text-sm font-semibold uppercase tracking-[0.2em] text-muted-gold">Clinic hours</p>
-            <p className="mt-3 font-serif text-3xl font-semibold leading-none text-deep-espresso">{clinic.hours}</p>
+            <p className="mt-3 font-serif text-xl sm:text-2xl md:text-3xl font-semibold leading-tight text-deep-espresso">{clinic.hours}</p>
             <p className="pretty mt-4 leading-7 text-muted-foreground">
               Form submissions are enquiry requests only and do not provide medical or dental advice.
             </p>
@@ -49,7 +49,7 @@ export default function BookPage() {
             <p className="text-sm font-semibold uppercase tracking-[0.2em] text-champagne-gold">
               Prefer WhatsApp?
             </p>
-            <p className="mt-3 font-serif text-3xl font-semibold leading-none">Message {clinic.phone}</p>
+            <p className="mt-3 font-serif text-xl sm:text-2xl md:text-3xl font-semibold leading-tight">Message {clinic.phone}</p>
             <PremiumButton href={contactLinks.whatsapp} variant="gold" className="mt-5">
               <MessageCircle className="size-4" aria-hidden />
               WhatsApp now

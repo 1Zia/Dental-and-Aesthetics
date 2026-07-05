@@ -21,7 +21,7 @@ export function DentalAestheticsSplit() {
       <div className="container-shell">
         <div className="editorial-rule">
           <SectionLabel>Dental + aesthetics</SectionLabel>
-          <h2 className="balanced mt-4 max-w-4xl font-serif text-5xl font-semibold leading-none text-deep-espresso md:text-7xl">
+          <h2 className="balanced mt-4 max-w-4xl font-serif text-3xl sm:text-4xl md:text-7xl font-semibold leading-tight md:leading-none text-deep-espresso">
             Two kinds of care, one calm clinical standard.
           </h2>
         </div>
@@ -31,7 +31,7 @@ export function DentalAestheticsSplit() {
               <p className="mb-6 text-xs font-semibold uppercase tracking-[0.22em] text-muted-gold">
                 {index === 0 ? "Oral health + smile" : "Skin + facial balance"}
               </p>
-              <h2 className="font-serif text-6xl font-semibold leading-none text-deep-espresso">{panel.title}</h2>
+              <h2 className="font-serif text-3xl sm:text-4xl md:text-6xl font-semibold leading-tight md:leading-none text-deep-espresso">{panel.title}</h2>
               <p className="pretty mt-6 text-lg leading-8 text-muted-foreground">{panel.copy}</p>
               <div className="mt-8 grid grid-cols-2 gap-x-6 gap-y-3 border-t border-border pt-6">
                 {panel.services.map((service) => (

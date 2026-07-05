@@ -78,7 +78,7 @@ export default function PricingPage() {
         <div className="container-shell grid gap-8 lg:grid-cols-[0.9fr_1.1fr] lg:items-end">
           <div className="editorial-rule">
             <SectionLabel>Pricing guidance</SectionLabel>
-            <h1 className="balanced mt-5 max-w-5xl font-serif text-6xl font-semibold leading-none text-deep-espresso md:text-8xl">
+            <h1 className="balanced mt-5 max-w-5xl font-serif text-4xl sm:text-5xl md:text-8xl font-semibold leading-tight md:leading-none text-deep-espresso">
               Consultation-led pricing without misleading fixed promises.
             </h1>
           </div>
@@ -95,7 +95,7 @@ export default function PricingPage() {
         <div className="container-shell grid gap-8 lg:grid-cols-[0.8fr_1.2fr]">
           <div>
             <SectionLabel>Pricing explanation</SectionLabel>
-            <h2 className="balanced mt-4 font-serif text-5xl font-semibold leading-none text-deep-espresso md:text-7xl">
+            <h2 className="balanced mt-4 font-serif text-3xl sm:text-4xl md:text-7xl font-semibold leading-tight md:leading-none text-deep-espresso">
               Why prices are confirmed after consultation.
             </h2>
           </div>
@@ -115,7 +115,7 @@ export default function PricingPage() {
           <div className="mt-8 grid gap-4 md:grid-cols-2 lg:grid-cols-5">
             {categories.map((category) => (
               <div key={category} className="border-t border-border pt-5">
-                <p className="pretty font-serif text-3xl font-semibold leading-none text-deep-espresso">{category}</p>
+                <p className="pretty font-serif text-xl sm:text-2xl md:text-3xl font-semibold leading-tight text-deep-espresso">{category}</p>
               </div>
             ))}
           </div>
@@ -127,7 +127,7 @@ export default function PricingPage() {
           <div className="flex flex-col gap-5 md:flex-row md:items-end md:justify-between">
             <div className="editorial-rule">
               <SectionLabel>Starting-from placeholders</SectionLabel>
-              <h2 className="mt-4 font-serif text-5xl font-semibold leading-none text-deep-espresso md:text-7xl">
+              <h2 className="mt-4 font-serif text-3xl sm:text-4xl md:text-7xl font-semibold leading-tight md:leading-none text-deep-espresso">
                 Placeholder pricing cards.
               </h2>
             </div>
@@ -140,7 +140,7 @@ export default function PricingPage() {
               <PremiumCard key={card.treatment} className="premium-lift relative overflow-hidden">
                 <span className="absolute inset-x-0 top-0 h-1 bg-champagne-gold/75" aria-hidden />
                 <p className="inline-flex border border-border bg-pearl px-3 py-1 text-[0.68rem] font-semibold uppercase tracking-[0.2em] text-muted-gold">{card.category}</p>
-                <h3 className="mt-4 font-serif text-4xl font-semibold leading-none text-deep-espresso">
+                <h3 className="mt-4 font-serif text-2xl sm:text-3xl md:text-4xl font-semibold leading-tight text-deep-espresso">
                   {card.treatment}
                 </h3>
                 <p className="mt-6 border-y border-border py-4 text-lg font-semibold text-deep-espresso">
@@ -157,7 +157,7 @@ export default function PricingPage() {
         <div className="container-shell grid gap-8 lg:grid-cols-[0.8fr_1.2fr]">
           <div>
             <SectionLabel>Why assessment matters</SectionLabel>
-            <h2 className="balanced mt-4 font-serif text-5xl font-semibold leading-none text-deep-espresso md:text-7xl">
+            <h2 className="balanced mt-4 font-serif text-3xl sm:text-4xl md:text-7xl font-semibold leading-tight md:leading-none text-deep-espresso">
               A quote should match the real plan.
             </h2>
           </div>
@@ -178,7 +178,7 @@ export default function PricingPage() {
         <div className="container-shell flex flex-col gap-6 md:flex-row md:items-end md:justify-between">
           <div>
             <p className="text-sm font-semibold uppercase tracking-[0.22em] text-champagne-gold">Pricing CTA</p>
-            <h2 className="balanced mt-4 max-w-3xl font-serif text-5xl font-semibold leading-none md:text-7xl">
+            <h2 className="balanced mt-4 max-w-3xl font-serif text-3xl sm:text-4xl md:text-7xl font-semibold leading-tight md:leading-none">
               Ask the clinic to confirm the right estimate.
             </h2>
           </div>

@@ -15,7 +15,7 @@ export default function BlogPage() {
         <div className="container-shell grid gap-8 lg:grid-cols-[0.9fr_1.1fr] lg:items-end">
           <div className="editorial-rule">
             <SectionLabel>Journal</SectionLabel>
-            <h1 className="balanced mt-5 font-serif text-6xl font-semibold leading-none text-deep-espresso md:text-8xl">
+            <h1 className="balanced mt-5 font-serif text-4xl font-semibold leading-tight text-deep-espresso sm:text-5xl md:text-8xl md:leading-none">
               Educational guidance for dental and aesthetic decisions.
             </h1>
           </div>
@@ -44,7 +44,7 @@ export default function BlogPage() {
                   <span>{post.category}</span>
                   <span>{post.readingTime}</span>
                 </div>
-                <h2 className="balanced mt-6 font-serif text-4xl font-semibold leading-none text-deep-espresso md:text-5xl">
+                <h2 className="balanced mt-6 font-serif text-2xl font-semibold leading-tight text-deep-espresso sm:text-3xl md:text-5xl md:leading-none">
                   {post.title}
                 </h2>
                 <p className="pretty mt-5 leading-7 text-muted-foreground">{post.intro}</p>

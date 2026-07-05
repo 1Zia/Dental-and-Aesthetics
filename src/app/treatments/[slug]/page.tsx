@@ -57,7 +57,7 @@ export default async function TreatmentPage({ params }: { params: Promise<{ slug
           <div className="mt-12 grid gap-8 lg:grid-cols-[0.85fr_1.15fr] lg:items-end">
             <div className="editorial-rule">
               <SectionLabel>{treatment.category}</SectionLabel>
-              <h1 className="balanced mt-5 font-serif text-6xl font-semibold leading-none text-deep-espresso md:text-8xl">
+              <h1 className="balanced mt-5 font-serif text-4xl sm:text-5xl md:text-8xl font-semibold leading-tight md:leading-none text-deep-espresso">
                 {treatment.title}
               </h1>
             </div>
@@ -76,7 +76,7 @@ export default async function TreatmentPage({ params }: { params: Promise<{ slug
         <div className="container-shell grid gap-8 lg:grid-cols-[0.75fr_1.25fr]">
           <div className="editorial-rule">
             <SectionLabel>Overview</SectionLabel>
-            <h2 className="mt-4 font-serif text-5xl font-semibold leading-none text-deep-espresso md:text-7xl">
+            <h2 className="mt-4 font-serif text-3xl sm:text-4xl md:text-7xl font-semibold leading-tight md:leading-none text-deep-espresso">
               Consultation-led care.
             </h2>
           </div>
@@ -100,7 +100,7 @@ export default async function TreatmentPage({ params }: { params: Promise<{ slug
           <div className="mt-8 divide-y divide-border border-y border-border">
             {treatment.faqs.map((faq) => (
               <details key={faq.question} className="py-5">
-                <summary className="cursor-pointer list-none font-serif text-3xl font-semibold text-deep-espresso">
+                <summary className="cursor-pointer list-none font-serif text-xl sm:text-2xl md:text-3xl font-semibold leading-tight text-deep-espresso">
                   {faq.question}
                 </summary>
                 <p className="pretty mt-4 leading-7 text-muted-foreground">{faq.answer}</p>
@@ -125,7 +125,7 @@ export default async function TreatmentPage({ params }: { params: Promise<{ slug
             <div className="flex flex-col gap-5 md:flex-row md:items-end md:justify-between">
               <div className="editorial-rule">
                 <SectionLabel>Related treatments</SectionLabel>
-                <h2 className="mt-4 font-serif text-5xl font-semibold leading-none text-deep-espresso md:text-7xl">
+                <h2 className="mt-4 font-serif text-3xl sm:text-4xl md:text-7xl font-semibold leading-tight md:leading-none text-deep-espresso">
                   More {treatment.category.toLowerCase()} care.
                 </h2>
               </div>
@@ -150,7 +150,7 @@ export default async function TreatmentPage({ params }: { params: Promise<{ slug
 function ListPanel({ title, items }: { title: string; items: string[] }) {
   return (
     <PremiumCard className="premium-lift shadow-none">
-      <h3 className="font-serif text-4xl font-semibold text-deep-espresso">{title}</h3>
+      <h3 className="font-serif text-2xl sm:text-3xl md:text-4xl font-semibold leading-tight text-deep-espresso">{title}</h3>
       <ul className="mt-6 grid gap-3">
         {items.map((item) => (
           <li key={item} className="border-t border-border pt-3 leading-7 text-muted-foreground">

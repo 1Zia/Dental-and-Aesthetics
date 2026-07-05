@@ -17,7 +17,7 @@ export default function TreatmentsPage() {
         <div className="container-shell grid gap-8 lg:grid-cols-[0.9fr_1.1fr] lg:items-end">
           <div className="editorial-rule">
             <SectionLabel>Treatments</SectionLabel>
-            <h1 className="balanced mt-5 max-w-5xl font-serif text-6xl font-semibold leading-none text-deep-espresso md:text-8xl">
+            <h1 className="balanced mt-5 max-w-5xl font-serif text-4xl sm:text-5xl md:text-8xl font-semibold leading-tight md:leading-none text-deep-espresso">
               Dental and aesthetic treatment planning, guided by suitability.
             </h1>
           </div>
@@ -74,7 +74,7 @@ function TreatmentCategorySection({ category }: { category: TreatmentCategory })
         <div className="flex flex-col gap-5 md:flex-row md:items-end md:justify-between">
           <div>
             <SectionLabel>{category}</SectionLabel>
-            <h2 className="mt-4 font-serif text-5xl font-semibold leading-none text-deep-espresso md:text-7xl">
+            <h2 className="mt-4 font-serif text-3xl sm:text-4xl md:text-7xl font-semibold leading-tight md:leading-none text-deep-espresso">
               {category} treatments
             </h2>
           </div>

@@ -20,7 +20,7 @@ export function SignatureTreatments() {
         <div className="grid gap-5 lg:grid-cols-[0.8fr_1.2fr] lg:items-end">
           <div className="editorial-rule">
             <SectionLabel>Signature treatments</SectionLabel>
-            <h2 className="balanced mt-4 font-serif text-5xl font-semibold leading-none text-deep-espresso md:text-7xl">
+            <h2 className="balanced mt-4 font-serif text-3xl sm:text-4xl md:text-7xl font-semibold leading-tight md:leading-none text-deep-espresso">
               Signature treatments for smiles, skin, and confidence.
             </h2>
           </div>
@@ -49,7 +49,7 @@ export function SignatureTreatments() {
                 <p className="inline-flex border border-border bg-pearl px-3 py-1 text-xs font-semibold uppercase tracking-[0.2em] text-muted-gold">
                   {treatment.category}
                 </p>
-                <h3 className="mt-5 font-serif text-4xl font-semibold leading-none text-deep-espresso">
+                <h3 className="mt-5 font-serif text-2xl sm:text-3xl font-semibold leading-tight text-deep-espresso">
                   {treatment.title}
                 </h3>
                 <p className="pretty mt-4 leading-7 text-muted-foreground">{treatment.shortDescription}</p>

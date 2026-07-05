@@ -19,7 +19,7 @@ export function TreatmentCategoryQuickLinks() {
             <p className="text-sm font-semibold uppercase tracking-[0.18em] text-muted-gold">
               Not sure where to begin?
             </p>
-            <h2 className="mt-2 font-serif text-4xl font-semibold leading-none text-deep-espresso md:text-5xl">
+            <h2 className="mt-2 font-serif text-2xl sm:text-3xl md:text-5xl font-semibold leading-tight md:leading-none text-deep-espresso">
               Choose the area closest to your concern.
             </h2>
             <p className="pretty mt-3 max-w-2xl text-sm leading-6 text-muted-foreground">
@@ -37,7 +37,7 @@ export function TreatmentCategoryQuickLinks() {
               href={`/treatments#${category.toLowerCase()}`}
               className="liquid-glass premium-lift p-5"
             >
-              <span className="block font-serif text-3xl font-semibold leading-none text-deep-espresso">
+              <span className="block font-serif text-2xl sm:text-3xl font-semibold leading-tight text-deep-espresso">
                 {category}
               </span>
               <span className="pretty mt-3 block text-sm leading-6 text-muted-foreground">

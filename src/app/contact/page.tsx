@@ -16,12 +16,12 @@ export default function ContactPage() {
         <div className="container-shell grid gap-8 lg:grid-cols-[0.9fr_1.1fr] lg:items-end">
           <div className="editorial-rule">
             <SectionLabel>Contact</SectionLabel>
-            <h1 className="balanced mt-5 font-serif text-6xl font-semibold leading-none text-deep-espresso md:text-8xl">
+            <h1 className="balanced mt-5 font-serif text-4xl font-semibold leading-tight text-deep-espresso sm:text-5xl md:text-8xl md:leading-none">
               Visit or message the clinic.
             </h1>
           </div>
           <PremiumCard>
-            <p className="font-serif text-4xl font-semibold leading-none text-deep-espresso">{clinic.fullName}</p>
+            <p className="font-serif text-2xl font-semibold leading-tight text-deep-espresso sm:text-3xl md:text-4xl">{clinic.fullName}</p>
             <p className="pretty mt-5 leading-8 text-muted-foreground">
               For appointment requests, treatment questions, or location guidance, contact the clinic directly.
             </p>
@@ -54,7 +54,7 @@ export default function ContactPage() {
         <div className="container-shell grid gap-8 lg:grid-cols-[0.9fr_1.1fr]">
           <div className="editorial-rule">
             <SectionLabel>Location</SectionLabel>
-            <h2 className="balanced mt-4 font-serif text-5xl font-semibold leading-none text-deep-espresso md:text-7xl">
+            <h2 className="balanced mt-4 font-serif text-3xl font-semibold leading-tight text-deep-espresso sm:text-4xl md:text-7xl md:leading-none">
               B-17, Islamabad.
             </h2>
             <p className="pretty mt-6 max-w-xl text-lg leading-8 text-muted-foreground">
@@ -64,7 +64,7 @@ export default function ContactPage() {
           <div className="liquid-glass premium-lift flex min-h-96 items-end p-8">
             <div>
               <p className="text-xs font-semibold uppercase tracking-[0.2em] text-muted-gold">Google Maps placeholder</p>
-              <p className="mt-3 font-serif text-5xl font-semibold leading-none text-deep-espresso/45">
+              <p className="mt-3 font-serif text-2xl font-semibold leading-tight text-deep-espresso/45 sm:text-3xl md:text-5xl">
                 {clinic.address}
               </p>
             </div>
@@ -105,7 +105,7 @@ export default function ContactPage() {
         <div className="container-shell flex flex-col gap-6 md:flex-row md:items-end md:justify-between">
           <div>
             <p className="text-sm font-semibold uppercase tracking-[0.22em] text-champagne-gold">Appointments</p>
-            <h2 className="balanced mt-4 max-w-3xl font-serif text-5xl font-semibold leading-none md:text-7xl">
+            <h2 className="balanced mt-4 max-w-3xl font-serif text-3xl font-semibold leading-tight sm:text-4xl md:text-7xl md:leading-none">
               Ready to request a consultation?
             </h2>
           </div>

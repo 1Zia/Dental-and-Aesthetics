@@ -59,20 +59,20 @@ export default function AboutPage() {
         <div className="container-shell grid gap-8 lg:grid-cols-[0.8fr_1.2fr]">
           <div className="editorial-rule">
             <SectionLabel>Clinic philosophy</SectionLabel>
-            <h2 className="balanced mt-4 font-serif text-5xl font-semibold leading-none text-deep-espresso md:text-7xl">
+            <h2 className="balanced mt-4 font-serif text-3xl sm:text-4xl md:text-7xl font-semibold leading-tight md:leading-none text-deep-espresso">
               Clear advice before treatment decisions.
             </h2>
           </div>
           <div className="grid gap-5 md:grid-cols-2">
             <PremiumCard className="shadow-none">
-              <h3 className="font-serif text-4xl font-semibold text-deep-espresso">Suitability first</h3>
+              <h3 className="font-serif text-2xl sm:text-3xl md:text-4xl font-semibold leading-tight text-deep-espresso">Suitability first</h3>
               <p className="pretty mt-4 leading-7 text-muted-foreground">
                 Treatment recommendations are guided by assessment, patient concerns, health history,
                 and realistic expectations.
               </p>
             </PremiumCard>
             <PremiumCard className="shadow-none">
-              <h3 className="font-serif text-4xl font-semibold text-deep-espresso">Measured outcomes</h3>
+              <h3 className="font-serif text-2xl sm:text-3xl md:text-4xl font-semibold leading-tight text-deep-espresso">Measured outcomes</h3>
               <p className="pretty mt-4 leading-7 text-muted-foreground">
                 The clinic&apos;s aesthetic direction favors natural-looking results, balance, and
                 thoughtful planning rather than over-treatment.
@@ -99,7 +99,7 @@ export default function AboutPage() {
         <div className="container-shell grid gap-8 lg:grid-cols-[1fr_1fr]">
           <div>
             <SectionLabel>Treatment planning and aftercare</SectionLabel>
-            <h2 className="balanced mt-4 font-serif text-5xl font-semibold leading-none text-deep-espresso md:text-7xl">
+            <h2 className="balanced mt-4 font-serif text-3xl sm:text-4xl md:text-7xl font-semibold leading-tight md:leading-none text-deep-espresso">
               Planning does not end when treatment begins.
             </h2>
           </div>
@@ -119,7 +119,7 @@ export default function AboutPage() {
           <div className="mt-8 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
             {values.map((value) => (
               <div key={value} className="border-t border-border pt-5">
-                <h3 className="font-serif text-4xl font-semibold leading-none text-deep-espresso">{value}</h3>
+                <h3 className="font-serif text-2xl sm:text-3xl md:text-4xl font-semibold leading-tight text-deep-espresso">{value}</h3>
               </div>
             ))}
           </div>
@@ -130,7 +130,7 @@ export default function AboutPage() {
         <div className="container-shell flex flex-col gap-6 border-y border-border py-12 md:flex-row md:items-center md:justify-between">
           <div>
             <SectionLabel>Start with consultation</SectionLabel>
-            <h2 className="mt-4 font-serif text-5xl font-semibold leading-none text-deep-espresso">
+            <h2 className="mt-4 font-serif text-3xl sm:text-4xl md:text-5xl font-semibold leading-tight md:leading-none text-deep-espresso">
               Talk through your concerns first.
             </h2>
           </div>
@@ -146,7 +146,7 @@ export default function AboutPage() {
 function CarePanel({ title, copy }: { title: string; copy: string }) {
   return (
     <article className="liquid-glass premium-lift p-8 md:p-11">
-      <h2 className="font-serif text-5xl font-semibold leading-none text-deep-espresso">{title}</h2>
+      <h2 className="font-serif text-2xl sm:text-3xl md:text-5xl font-semibold leading-tight md:leading-none text-deep-espresso">{title}</h2>
       <p className="pretty mt-6 text-lg leading-8 text-muted-foreground">{copy}</p>
     </article>
   );

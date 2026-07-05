@@ -43,7 +43,7 @@ export function ResultsGalleryPreview() {
         <div className="grid gap-5 lg:grid-cols-[0.85fr_1.15fr] lg:items-end">
           <div className="editorial-rule">
             <SectionLabel>Results & Cases</SectionLabel>
-            <h2 className="balanced mt-4 font-serif text-5xl font-semibold leading-none text-deep-espresso md:text-7xl">
+            <h2 className="balanced mt-4 font-serif text-3xl sm:text-4xl md:text-7xl font-semibold leading-tight md:leading-none text-deep-espresso">
               Realistic outcomes, carefully planned.
             </h2>
           </div>

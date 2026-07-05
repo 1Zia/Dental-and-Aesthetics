@@ -54,7 +54,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
               <span className="text-deep-espresso">{post.category}</span>
             </nav>
             <SectionLabel className="mt-12">{post.category}</SectionLabel>
-            <h1 className="balanced mt-5 font-serif text-6xl font-semibold leading-none text-deep-espresso md:text-8xl">
+            <h1 className="balanced mt-5 font-serif text-4xl sm:text-5xl md:text-8xl font-semibold leading-tight md:leading-none text-deep-espresso">
               {post.title}
             </h1>
             <div className="mt-6 flex flex-wrap gap-4 text-sm font-semibold text-muted-foreground">
@@ -70,7 +70,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
             <div className="grid gap-12">
               {post.sections.map((section) => (
                 <section key={section.heading}>
-                  <h2 className="font-serif text-5xl font-semibold leading-none text-deep-espresso">
+                  <h2 className="font-serif text-2xl sm:text-3xl md:text-5xl font-semibold leading-tight md:leading-none text-deep-espresso">
                     {section.heading}
                   </h2>
                   <p className="pretty mt-5 text-lg leading-8 text-muted-foreground">{section.body}</p>
@@ -87,7 +87,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
               <div className="mt-8 divide-y divide-border border-y border-border">
                 {post.faqs.map((faq) => (
                   <details key={faq.question} className="py-5">
-                    <summary className="cursor-pointer list-none font-serif text-3xl font-semibold text-deep-espresso">
+                    <summary className="cursor-pointer list-none font-serif text-xl sm:text-2xl md:text-3xl font-semibold leading-tight text-deep-espresso">
                       {faq.question}
                     </summary>
                     <p className="pretty mt-4 leading-7 text-muted-foreground">{faq.answer}</p>

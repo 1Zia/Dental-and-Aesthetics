@@ -82,7 +82,7 @@ export default function SmileGalleryPage() {
         <div className="container-shell grid gap-8 lg:grid-cols-[1fr_1fr] lg:items-center">
           <div className="editorial-rule">
             <SectionLabel>Smile & Aesthetic Gallery</SectionLabel>
-            <h1 className="balanced mt-5 font-serif text-5xl font-semibold leading-tight text-deep-espresso md:text-7xl">
+            <h1 className="balanced mt-5 font-serif text-3xl sm:text-4xl md:text-7xl font-semibold leading-tight md:leading-none text-deep-espresso">
               Clinical case studies & patient results.
             </h1>
           </div>
@@ -144,7 +144,7 @@ export default function SmileGalleryPage() {
         <div className="container-shell flex flex-col gap-6 md:flex-row md:items-end md:justify-between">
           <div>
             <p className="text-sm font-semibold uppercase tracking-[0.22em] text-champagne-gold">Assessment first</p>
-            <h2 className="balanced mt-4 max-w-3xl font-serif text-4xl font-semibold leading-tight md:text-6xl">
+            <h2 className="balanced mt-4 max-w-3xl font-serif text-2xl sm:text-3xl md:text-6xl font-semibold leading-tight md:leading-none">
               Understand what may be suitable for you.
             </h2>
           </div>
@@ -176,7 +176,7 @@ function CaseStudyCard({ caseItem }: { caseItem: CaseCard }) {
       </div>
       <div className="p-6 flex flex-col flex-grow">
         <p className="text-xs font-semibold uppercase tracking-[0.2em] text-muted-gold">{caseItem.category}</p>
-        <h2 className="mt-2 font-serif text-3xl font-semibold leading-tight text-deep-espresso">{caseItem.title}</h2>
+        <h2 className="mt-2 font-serif text-2xl sm:text-3xl font-semibold leading-tight text-deep-espresso">{caseItem.title}</h2>
         <dl className="mt-5 grid gap-4 text-sm flex-grow">
           <div>
             <dt className="text-xs font-bold uppercase tracking-wider text-deep-espresso/50">Concern</dt>

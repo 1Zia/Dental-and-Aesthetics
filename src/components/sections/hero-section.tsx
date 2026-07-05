@@ -68,11 +68,10 @@ export function HeroSection() {
       </div>
 
       {/* Scrollable text content overlay */}
-      <div className="relative z-10 -mt-[100vh] w-full">
-        <div className="container-shell min-h-dvh grid gap-12 lg:grid-cols-[1.15fr_0.85fr] items-center">
+      <div className="relative z-10 -mt-[100dvh] w-full">
+        <div className="container-shell min-h-dvh grid gap-12 lg:grid-cols-[1.15fr_0.85fr] items-start lg:items-center">
           <AnimatedReveal>
-            <div className="py-24 lg:py-32 flex flex-col justify-center max-w-2xl relative">
-              {/* Subtle top rule decoration representing clinic sophistication */}
+            <div className="pt-28 pb-16 lg:py-32 flex flex-col justify-center max-w-2xl relative">
               <div className="absolute top-0 left-0 w-24 h-[1px] bg-champagne-gold/60 md:block hidden" />
               
               <SectionLabel className="text-muted-gold font-semibold uppercase tracking-[0.2em] text-xs">

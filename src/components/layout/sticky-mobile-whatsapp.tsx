@@ -9,11 +9,11 @@ export function StickyMobileWhatsapp() {
           <p className="truncate text-xs font-semibold uppercase tracking-[0.16em] text-champagne-gold">
             Prefer WhatsApp?
           </p>
-          <p className="truncate text-sm text-pearl/78">Message {clinic.phone} for availability</p>
+          <p className="text-xs sm:text-sm text-pearl/78 leading-normal">Message {clinic.phone} for availability</p>
         </div>
         <a
           href={contactLinks.whatsapp}
-          className="pressable inline-flex min-h-11 items-center justify-center gap-2 rounded-[var(--radius-sm)] bg-champagne-gold px-4 text-sm font-semibold text-deep-espresso"
+          className="pressable inline-flex min-h-11 items-center justify-center gap-2 rounded-[var(--radius-sm)] bg-champagne-gold px-4 text-xs sm:text-sm font-semibold text-deep-espresso shrink-0"
           aria-label={`Message ${clinic.fullName} on WhatsApp`}
         >
           <MessageCircle className="size-4" aria-hidden />

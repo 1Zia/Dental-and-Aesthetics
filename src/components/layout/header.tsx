@@ -55,22 +55,22 @@ export function Header() {
       }}
     >
       <nav
-        className="site-header-glass pointer-events-auto mx-auto grid w-full max-w-[1280px] grid-cols-[1fr_auto_1fr] items-center gap-4 px-4 py-2 lg:px-5 text-deep-espresso"
+        className="site-header-glass pointer-events-auto mx-auto flex lg:grid w-full max-w-[1280px] lg:grid-cols-[1fr_auto_1fr] items-center justify-between gap-4 px-4 py-2 lg:px-5 text-deep-espresso"
       >
         {/* Left Column: Logo (aligned to start, prevented from wrapping) */}
         <Link 
           href="/" 
-          className="flex min-w-0 items-center gap-3 justify-self-start whitespace-nowrap" 
+          className="flex min-w-0 items-center gap-3 justify-self-start" 
           aria-label={`${clinic.fullName} home`}
         >
           <span className="grid size-10 shrink-0 place-items-center rounded-full bg-deep-espresso font-serif text-base font-semibold text-pearl shadow-none">
             R
           </span>
           <span className="min-w-0">
-            <span className="block text-sm font-semibold leading-tight text-deep-espresso whitespace-nowrap">
+            <span className="block text-xs sm:text-sm font-semibold leading-tight text-deep-espresso whitespace-normal">
               {clinic.name}
             </span>
-            <span className="block text-[11px] leading-none text-muted-foreground mt-0.5">by Dr. Romana</span>
+            <span className="block text-[10px] sm:text-[11px] leading-none text-muted-foreground mt-0.5">by Dr. Romana</span>
           </span>
         </Link>
 

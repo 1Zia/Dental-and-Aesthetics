@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { BookingCta } from "@/components/sections/booking-cta";
 import { PremiumButton } from "@/components/ui/premium-button";
 import { PremiumCard } from "@/components/ui/premium-card";
@@ -21,21 +22,36 @@ const values = [
 export default function AboutPage() {
   return (
     <main>
-      <section className="page-shell bg-[linear-gradient(112deg,var(--porcelain-white)_0%,var(--porcelain-white)_51%,var(--warm-ivory)_51%,var(--warm-ivory)_100%)]">
-        <div className="container-shell grid gap-10 lg:grid-cols-[0.92fr_1.08fr] lg:items-end">
+      <section className="relative min-h-[75vh] md:min-h-[85vh] flex items-center overflow-hidden bg-deep-espresso text-pearl">
+        {/* Background Image with elegant overlay */}
+        <div className="absolute inset-0 z-0">
+          <Image
+            src="/clinic-exterior.jpg"
+            alt="Dental & Aesthetic Hub Exterior"
+            fill
+            priority
+            sizes="100vw"
+            className="object-cover object-center md:object-[center_28%] opacity-40 transition-transform duration-[10s] ease-out hover:scale-105"
+          />
+          {/* Gradients to blend text and background cleanly */}
+          <div className="absolute inset-0 bg-gradient-to-t from-deep-espresso via-deep-espresso/70 to-deep-espresso/40 md:bg-gradient-to-r md:from-deep-espresso md:via-deep-espresso/60 md:to-transparent z-[1]" />
+        </div>
+
+        {/* Content */}
+        <div className="container-shell relative z-10 py-28 md:py-36 grid gap-10 lg:grid-cols-[1.1fr_0.9fr] items-center">
           <div className="editorial-rule">
-            <SectionLabel>About the clinic</SectionLabel>
-            <h1 className="balanced mt-5 font-serif text-6xl font-semibold leading-none text-deep-espresso md:text-8xl">
+            <SectionLabel className="text-champagne-gold">About the clinic</SectionLabel>
+            <h1 className="balanced mt-5 font-serif text-5xl sm:text-6xl font-semibold leading-tight text-pearl md:text-8xl">
               Calm dental and aesthetic care in Islamabad.
             </h1>
           </div>
-          <PremiumCard>
-            <p className="pretty text-xl leading-9 text-deep-espresso">
+          <div className="liquid-glass border-pearl/10 bg-pearl/5 backdrop-blur-md p-8 md:p-10 rounded-2xl text-pearl/90">
+            <p className="pretty text-base sm:text-lg leading-relaxed sm:leading-8">
               Dental & Aesthetic Hub by Dr. Romana is a dental and aesthetic clinic in Islamabad
               offering dental care, skin treatments, hair treatments, laser procedures, and
               aesthetic consultations in a calm clinical environment.
             </p>
-          </PremiumCard>
+          </div>
         </div>
       </section>
 

@@ -6,7 +6,6 @@ import { useEffect, useState } from "react";
 import { navigation } from "@/data/navigation";
 import { clinic, contactLinks } from "@/lib/constants";
 import { cn } from "@/lib/utils";
-import { PremiumButton } from "@/components/ui/premium-button";
 
 export function MobileNav() {
   const [open, setOpen] = useState(false);
@@ -50,7 +49,7 @@ export function MobileNav() {
       <div 
         id="mobile-navigation"
         className={cn(
-          "watery-glass !fixed inset-x-4 top-[calc(env(safe-area-inset-top)+4.75rem)] z-50 max-h-[calc(100dvh-8.5rem)] overflow-y-auto p-4 shadow-2xl transition-all duration-300 ease-out md:hidden",
+          "watery-glass !fixed inset-x-4 top-[calc(env(safe-area-inset-top)+4.75rem)] z-50 max-h-[calc(100dvh-8.5rem)] overflow-y-auto overflow-x-hidden p-4 shadow-2xl transition-all duration-300 ease-out md:hidden",
           open 
             ? "opacity-100 translate-y-0 scale-100 pointer-events-auto" 
             : "opacity-0 -translate-y-2 scale-95 pointer-events-none"
@@ -68,22 +67,32 @@ export function MobileNav() {
             </Link>
           ))}
         </div>
-        <div className="mt-4 border-y border-border py-4 text-sm leading-6 text-muted-foreground">
-          <p className="flex gap-2">
+        <div className="mt-4 min-w-0 border-y border-border py-4 text-sm leading-6 text-muted-foreground">
+          <p className="flex min-w-0 gap-2">
             <Clock className="mt-1 size-4 shrink-0 text-muted-gold" aria-hidden />
-            {clinic.hours}
+            <span className="min-w-0 break-words">{clinic.hours}</span>
           </p>
-          <p className="mt-2 flex gap-2">
+          <p className="mt-2 flex min-w-0 gap-2">
             <Phone className="mt-1 size-4 shrink-0 text-muted-gold" aria-hidden />
-            {clinic.phone}
+            <span className="min-w-0 break-words">{clinic.phone}</span>
           </p>
         </div>
-        <PremiumButton href="/book" className="mt-4 w-full" onClick={() => setOpen(false)}>
-          Book Consultation
-        </PremiumButton>
-        <PremiumButton href={contactLinks.whatsapp} variant="ivory" className="mt-3 w-full" onClick={() => setOpen(false)}>
-          WhatsApp booking
-        </PremiumButton>
+        <div className="mt-4 grid min-w-0 grid-cols-2 gap-2">
+          <Link
+            href="/book"
+            className="btn-premium btn-espresso pressable min-h-11 w-full min-w-0 px-2 text-center text-[12px] sm:text-sm"
+            onClick={() => setOpen(false)}
+          >
+            Book
+          </Link>
+          <Link
+            href={contactLinks.whatsapp}
+            className="btn-premium btn-ivory pressable min-h-11 w-full min-w-0 px-2 text-center text-[12px] sm:text-sm"
+            onClick={() => setOpen(false)}
+          >
+            WhatsApp
+          </Link>
+        </div>
       </div>
     </div>
   );
